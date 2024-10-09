@@ -1,0 +1,93 @@
+ 372  PRACTICUM=code_10_09A
+  373  echo $PRACTICUM 
+  374  DST=~/classes/comp122/assembly-programming/$PRACTICUM 
+  375  echo $DST
+  376  cd ~/classes/comp122/assembly-programming/
+  377  git init $PRACTICUM 
+  378  cd $PRACTICUM 
+  379  ls 
+  380  ls -a
+  381  git status
+  382  touch README.md
+  383  git add README.md 
+  384  git commit -m 'initial commit'
+  385  pushd ~/classes/comp122/deliverables/41-simple-interest-smf-steve/
+  386  cp -r bin java java_tac makefile test_cases $DST
+  387  popd
+  388  ls
+  389  subl .
+  390  open ../../reference/programming_workflow.md 
+  391  git log --online --graph
+  392  git log --oneline --graph
+  393  touch foobar
+  394  git add foobar
+  395  git commit -m 'added foobar'
+  396  git rm foobar
+  397  git commit -m removed_foobar
+  398  git log --oneline --graph
+  399  git branch java
+  400  git add foobar
+  401  touch foobar
+  402  git add foobar
+  403  git commit -m added_foobar
+  404  git rm foobar 
+  405  git commit -m removed_foobar
+  406  git log --oneline --graph
+  407  open ~/classes/comp122/deliverables/41-simple-interest-smf-steve/programming_workflow.md 
+  408  git switch java
+  409  touch java/mult.j
+  410  git add java/mult.j
+  411  git commit -m 'creating the java/mult.j file'
+  412  git switch main
+  413  git status
+  414  git ls-files
+  415  git switch java
+  416  git ls-files
+  417  git switch main
+  418  git status
+  419  git add .
+  420  git status
+  421  git ls-files
+  422  git commit -m 'all the support files added'
+  423  git switch java
+  424  ls
+  425  git merge --no-ff main
+  426  ls
+  427  git switch main
+  428  git log --oneline --graph
+  429  git switch branch
+  430  git switch java
+  431  git log --oneline --graph
+  432  subl .
+  433  git branch
+  434  git switch main
+  435  git branch 
+  436  git branch java_tac
+  437  git switch java_tac
+  438  touch java_tac/mult.j
+  439  git java_tac/mult.j
+  440  git add java_tac/mult.j
+  441  git commit -m 'added inital file; java_tac/mult.j
+  442  git commit -m 'added inital file' java_tac/mult.j
+  443  git switch main
+  444  git log --oneline --graph
+  445  git switch java
+  446  java_subroutine mult 1 4 7
+  447  java_subroutine mul 1 4 7
+  448  java_subroutine java/mult 1 4 7
+  449  java_subroutine java/mult 1 4 7
+  450  java_subroutine java/mult 1 4 3
+  451  git commit -m 'outside loop working'
+  452  git commit -m 'outside loop working' -a
+  453  java_subroutine java/mult 1 4 3
+  454  git switch main
+  455  git status
+  456  git commit -m 'finished this task' -a
+  457  git switch main
+  458  git merge --no-ff java
+  459  git tag java_submitted
+  460  git log --one-line --graph
+  461  git log --oneline --graph
+  462  git log --oneline --graph
+  463  git switch main
+ 
